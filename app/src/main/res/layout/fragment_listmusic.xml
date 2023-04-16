@@ -14,7 +14,7 @@
         android:background="@drawable/ripple_effect2"
         android:layout_gravity="center">
         <TextView
-            android:id="@+id/thienngu"
+            android:id="@+id/txtSong"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
@@ -31,7 +31,7 @@
             android:textAlignment="center"
             android:singleLine="true"
             android:layout_centerInParent="true"
-            android:layout_toRightOf="@+id/thienngu"
+            android:layout_toRightOf="@+id/txtSong"
             android:textSize="20sp"
             android:textColor="@color/white"
             android:textStyle="bold"
@@ -48,7 +48,8 @@
         android:layout_weight="1"
         android:overScrollMode="never"
         tools:listitem="@layout/item_feature_song"
-        tools:orientation="vertical" />
+        tools:orientation="vertical"
+        />
 
 
 </LinearLayout>
