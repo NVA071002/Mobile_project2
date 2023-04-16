@@ -125,20 +125,14 @@ public class ListmusicFragment extends Fragment {
 
     @Override
     public void onResume() {
-
+        rcvMusic.getRecycledViewPool().clear();
+        musicAdapter.setData(list);
+        musicAdapter.notifyDataSetChanged();
         super.onResume();
-
-
-
-
     }
 
     @Override
     public void onStart() {
-        rcvMusic.getRecycledViewPool().clear();
-        musicAdapter.setData(list);
-        musicAdapter.notifyDataSetChanged();
         super.onStart();
-
     }
 }

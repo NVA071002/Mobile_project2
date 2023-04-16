@@ -88,4 +88,5 @@ public class AuthorFragment extends Fragment {
 
         return lstAuthor;
     }
+
 }

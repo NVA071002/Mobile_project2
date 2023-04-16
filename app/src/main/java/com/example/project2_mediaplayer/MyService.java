@@ -240,9 +240,9 @@ public class MyService extends Service {
         //set action pause and resume
         NotificationCompat.Action action2;
         if (isPlaying) {
-            action2 = new NotificationCompat.Action.Builder(R.drawable.pause, "Pause", getPendingIntent(this, ACTION_PAUSE)).build();
+            action2 = new NotificationCompat.Action.Builder(R.drawable.ic_pause, "Pause", getPendingIntent(this, ACTION_PAUSE)).build();
         } else {
-            action2 = new NotificationCompat.Action.Builder(R.drawable.ic_play_white, "Resume", getPendingIntent(this, ACTION_RESUME)).build();
+            action2 = new NotificationCompat.Action.Builder(R.drawable.ic_play, "Resume", getPendingIntent(this, ACTION_RESUME)).build();
         }
         context = this;
         Picasso.with(this).load(music.getSongimage()).into(new Target() {

@@ -262,7 +262,7 @@ public class MusicPlaying extends AppCompatActivity {
 
             case MyService.ACTION_PAUSE:
                 showInfoMusic();
-                btnPlay.setImageResource(R.drawable.ic_play_white);
+                btnPlay.setImageResource(R.drawable.ic_play);
                 circleImageView.clearAnimation();
                 isPlaying=false;
                 sendSongToMain();
@@ -277,7 +277,7 @@ public class MusicPlaying extends AppCompatActivity {
                 break;
             case MyService.ACTION_RESUME:
                 showInfoMusic();
-                btnPlay.setImageResource(R.drawable.pause);
+                btnPlay.setImageResource(R.drawable.ic_pause);
                 circleImageView.startAnimation(animation);
                 isPlaying=true;
                 sendSongToMain();

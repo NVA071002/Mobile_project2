@@ -101,8 +101,8 @@ public class ListMusicByAuthor extends AppCompatActivity {
             }
         };
         query.addListenerForSingleValueEvent(eventListener);
-        return list;
 
+        return list;
     }
 
 }
